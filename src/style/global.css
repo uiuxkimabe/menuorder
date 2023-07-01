@@ -79,13 +79,13 @@ nav a {
   transform: rotateX(0);
 }
 
-.navigasi ul li a {
-  display: inline-block;
+.navigasi ul li {
   width: 100%;
   padding: 1em 1.5em;
+  cursor: pointer;
 }
 
-.navigasi ul li a:hover {
+.navigasi ul li:hover {
   background-color: #313131;
 }
 
