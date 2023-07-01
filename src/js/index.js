@@ -7,7 +7,7 @@ document.querySelector(".hamBtn").addEventListener("click", () => {
 
 // search
 const inputField = document.getElementById("inputField");
-const list = document.querySelectorAll("#list li");
+const list = document.querySelectorAll("#list .card");
 
 inputField.addEventListener("input", () => {
   const inputValue = inputField.value.toLowerCase();
