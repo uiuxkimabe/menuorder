@@ -1,7 +1,7 @@
 // hamBtn
 
+const navigasi = document.querySelector(".navigasi");
 document.querySelector(".hamBtn").addEventListener("click", () => {
-  const navigasi = document.querySelector(".navigasi");
   navigasi.classList.toggle("popup");
 });
 
@@ -26,100 +26,113 @@ const pasta = document.querySelectorAll(".pasta");
 const indo = document.querySelectorAll(".indo");
 const chin = document.querySelectorAll(".chinese");
 const bev = document.querySelectorAll(".bev");
-console.info(filterNav);
+
+filterNav.forEach((element) => {
+  element.addEventListener("click", () => {
+    const hamBtnInput = document.querySelector(".hamBtn input");
+    navigasi.classList.toggle("popup");
+    hamBtnInput.checked = false;
+  });
+});
 
 filterNav[0].addEventListener("click", () => {
   all.forEach((element) => {
-    element.style.transform = "block";
+    element.style.display = "block";
   });
+  console.info("oke");
 });
 
 filterNav[1].addEventListener("click", () => {
   snack.forEach((element) => {
-    element.style.transform = "block";
+    element.style.display = "block";
   });
   pasta.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   indo.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   chin.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   bev.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
+  console.info("snack");
 });
 
 filterNav[2].addEventListener("click", () => {
   snack.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   pasta.forEach((element) => {
-    element.style.transform = "block";
+    element.style.display = "block";
   });
   indo.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   chin.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   bev.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
+  console.info("pasta");
 });
 
 filterNav[3].addEventListener("click", () => {
   snack.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   pasta.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   indo.forEach((element) => {
-    element.style.transform = "block";
+    element.style.display = "block";
   });
   chin.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   bev.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
+  console.info("indo");
 });
 
 filterNav[4].addEventListener("click", () => {
   snack.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   pasta.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   indo.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   chin.forEach((element) => {
-    element.style.transform = "block";
+    element.style.display = "block";
   });
   bev.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
+  console.info("chin");
 });
 
 filterNav[5].addEventListener("click", () => {
   snack.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   pasta.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   indo.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   chin.forEach((element) => {
-    element.style.transform = "none";
+    element.style.display = "none";
   });
   bev.forEach((element) => {
-    element.style.transform = "block";
+    element.style.display = "block";
   });
+  console.info("bev");
 });
