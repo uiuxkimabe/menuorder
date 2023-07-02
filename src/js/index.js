@@ -136,3 +136,17 @@ filterNav[5].addEventListener("click", () => {
   });
   console.info("bev");
 });
+
+// cart
+const cartNumb = document.querySelector(".cart .numb");
+const allAddBtn = document.querySelectorAll(".card button");
+let count = 0;
+allAddBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    count++;
+    cartNumb.innerHTML = count;
+    cartNumb.style.background = "red";
+    console.info(count);
+  });
+});
+console.info(allAddBtn);

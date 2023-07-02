@@ -91,6 +91,7 @@ nav a {
 
 .cart {
   gap: 1em;
+  position: relative;
 }
 
 .hamBtn {
@@ -137,6 +138,20 @@ nav a {
 
 .hamBtn input:checked ~ span:last-child {
   transform: translateY(0) rotate(45deg);
+}
+
+.cart .numb {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  left: -8px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 0.9rem;
 }
 
 /* end nav */
