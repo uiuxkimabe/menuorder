@@ -2,7 +2,7 @@
 
 const navigasi = document.querySelector(".navigasi");
 document.querySelector(".hamBtn").addEventListener("click", () => {
-  navigasi.classList.toggle("popup");
+    navigasi.classList.toggle("popup");
 });
 
 // search
@@ -10,12 +10,12 @@ const inputField = document.getElementById("inputField");
 const list = document.querySelectorAll("#list .card");
 
 inputField.addEventListener("input", () => {
-  const inputValue = inputField.value.toLowerCase();
+    const inputValue = inputField.value.toLowerCase();
 
-  list.forEach((element) => {
-    const text = element.textContent.toLowerCase();
-    element.style.display = text.includes(inputValue) ? "block" : "none";
-  });
+    list.forEach((element) => {
+        const text = element.textContent.toLowerCase();
+        element.style.display = text.includes(inputValue) ? "block" : "none";
+    });
 });
 
 // filter
@@ -28,125 +28,130 @@ const chin = document.querySelectorAll(".chinese");
 const bev = document.querySelectorAll(".bev");
 
 filterNav.forEach((element) => {
-  element.addEventListener("click", () => {
-    const hamBtnInput = document.querySelector(".hamBtn input");
-    navigasi.classList.toggle("popup");
-    hamBtnInput.checked = false;
-  });
+    element.addEventListener("click", () => {
+        const hamBtnInput = document.querySelector(".hamBtn input");
+        navigasi.classList.toggle("popup");
+        hamBtnInput.checked = false;
+    });
 });
 
 filterNav[0].addEventListener("click", () => {
-  all.forEach((element) => {
-    element.style.display = "block";
-  });
-  console.info("oke");
+    all.forEach((element) => {
+        element.style.display = "block";
+    });
+    console.info("oke");
 });
 
 filterNav[1].addEventListener("click", () => {
-  snack.forEach((element) => {
-    element.style.display = "block";
-  });
-  pasta.forEach((element) => {
-    element.style.display = "none";
-  });
-  indo.forEach((element) => {
-    element.style.display = "none";
-  });
-  chin.forEach((element) => {
-    element.style.display = "none";
-  });
-  bev.forEach((element) => {
-    element.style.display = "none";
-  });
-  console.info("snack");
+    snack.forEach((element) => {
+        element.style.display = "block";
+    });
+    pasta.forEach((element) => {
+        element.style.display = "none";
+    });
+    indo.forEach((element) => {
+        element.style.display = "none";
+    });
+    chin.forEach((element) => {
+        element.style.display = "none";
+    });
+    bev.forEach((element) => {
+        element.style.display = "none";
+    });
+    console.info("snack");
 });
 
 filterNav[2].addEventListener("click", () => {
-  snack.forEach((element) => {
-    element.style.display = "none";
-  });
-  pasta.forEach((element) => {
-    element.style.display = "block";
-  });
-  indo.forEach((element) => {
-    element.style.display = "none";
-  });
-  chin.forEach((element) => {
-    element.style.display = "none";
-  });
-  bev.forEach((element) => {
-    element.style.display = "none";
-  });
-  console.info("pasta");
+    snack.forEach((element) => {
+        element.style.display = "none";
+    });
+    pasta.forEach((element) => {
+        element.style.display = "block";
+    });
+    indo.forEach((element) => {
+        element.style.display = "none";
+    });
+    chin.forEach((element) => {
+        element.style.display = "none";
+    });
+    bev.forEach((element) => {
+        element.style.display = "none";
+    });
+    console.info("pasta");
 });
 
 filterNav[3].addEventListener("click", () => {
-  snack.forEach((element) => {
-    element.style.display = "none";
-  });
-  pasta.forEach((element) => {
-    element.style.display = "none";
-  });
-  indo.forEach((element) => {
-    element.style.display = "block";
-  });
-  chin.forEach((element) => {
-    element.style.display = "none";
-  });
-  bev.forEach((element) => {
-    element.style.display = "none";
-  });
-  console.info("indo");
+    snack.forEach((element) => {
+        element.style.display = "none";
+    });
+    pasta.forEach((element) => {
+        element.style.display = "none";
+    });
+    indo.forEach((element) => {
+        element.style.display = "block";
+    });
+    chin.forEach((element) => {
+        element.style.display = "none";
+    });
+    bev.forEach((element) => {
+        element.style.display = "none";
+    });
+    console.info("indo");
 });
 
 filterNav[4].addEventListener("click", () => {
-  snack.forEach((element) => {
-    element.style.display = "none";
-  });
-  pasta.forEach((element) => {
-    element.style.display = "none";
-  });
-  indo.forEach((element) => {
-    element.style.display = "none";
-  });
-  chin.forEach((element) => {
-    element.style.display = "block";
-  });
-  bev.forEach((element) => {
-    element.style.display = "none";
-  });
-  console.info("chin");
+    snack.forEach((element) => {
+        element.style.display = "none";
+    });
+    pasta.forEach((element) => {
+        element.style.display = "none";
+    });
+    indo.forEach((element) => {
+        element.style.display = "none";
+    });
+    chin.forEach((element) => {
+        element.style.display = "block";
+    });
+    bev.forEach((element) => {
+        element.style.display = "none";
+    });
+    console.info("chin");
 });
 
 filterNav[5].addEventListener("click", () => {
-  snack.forEach((element) => {
-    element.style.display = "none";
-  });
-  pasta.forEach((element) => {
-    element.style.display = "none";
-  });
-  indo.forEach((element) => {
-    element.style.display = "none";
-  });
-  chin.forEach((element) => {
-    element.style.display = "none";
-  });
-  bev.forEach((element) => {
-    element.style.display = "block";
-  });
-  console.info("bev");
+    snack.forEach((element) => {
+        element.style.display = "none";
+    });
+    pasta.forEach((element) => {
+        element.style.display = "none";
+    });
+    indo.forEach((element) => {
+        element.style.display = "none";
+    });
+    chin.forEach((element) => {
+        element.style.display = "none";
+    });
+    bev.forEach((element) => {
+        element.style.display = "block";
+    });
+    console.info("bev");
 });
 
 // cart
+const cart = document.querySelector(".cart");
 const cartNumb = document.querySelector(".cart .numb");
 const allAddBtn = document.querySelectorAll(".card button");
 let count = 0;
 allAddBtn.forEach((element) => {
-  element.addEventListener("click", () => {
-    count++;
-    cartNumb.innerHTML = count;
-    cartNumb.style.background = "red";
-    console.info(count);
-  });
+    element.addEventListener("click", () => {
+        count++;
+        cartNumb.innerHTML = count;
+        cartNumb.style.background = "red";
+        console.info(count);
+    });
 });
 console.info(allAddBtn);
+
+cart.addEventListener("click", () => {
+    document.getElementById("cart-place").classList.toggle("modal");
+});
