@@ -137,6 +137,12 @@ filterNav[5].addEventListener("click", () => {
   console.info("bev");
 });
 
+// open cart orderan
+const orderan = document.getElementById("orderan");
+orderan.addEventListener("click", () => {
+  document.getElementById("cart-place").classList.toggle("up");
+});
+
 // cart
 const allAddCart = document.querySelectorAll(".card .addCart");
 const menuName = document.querySelectorAll(".title p");
@@ -144,6 +150,17 @@ const qty = document.querySelectorAll(".qty");
 const arrMenuName = [];
 const arrQty = [];
 const tampung = document.querySelector(".tampung");
+let count = 0;
+let orderNotif = document.querySelector("#orderan .numb");
+allAddCart.forEach((countOrder) => {
+  countOrder.addEventListener("click", () => {
+    let result = count + 1;
+    count++;
+    orderNotif.innerHTML = result;
+    orderNotif.style.background = "red";
+    orderNotif.style.color = "#fff";
+  });
+});
 
 function addCart(numb) {
   arrMenuName.push(menuName[numb].textContent);
@@ -303,10 +320,12 @@ allAddCart[32].addEventListener("click", () => {
 function msg() {
   const url =
     "https://api.whatsapp.com/send?phone=6281385532791&text=Order%20%3A%0A*" +
-    order.textContent +
+    tampung.textContent +
     "*%20%3A%20";
 
   window.open(url);
 }
 
-document.getElementById("wa").addEventListener("click", () => msg());
+document.getElementById("wa").addEventListener("click", () => {
+  msg();
+});
