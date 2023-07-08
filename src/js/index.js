@@ -140,24 +140,173 @@ filterNav[5].addEventListener("click", () => {
 // cart
 const allAddCart = document.querySelectorAll(".card .addCart");
 const menuName = document.querySelectorAll(".title p");
-const cartPlace = document.querySelector("#cart-place .row ul li");
-const arrMenu = [];
-let node;
-let clone;
-let count = 0;
+const qty = document.querySelectorAll(".qty");
+const arrMenuName = [];
+const arrQty = [];
+const tampung = document.querySelector(".tampung");
 
-function duplicate(numb) {
-  node = menuName[numb];
-  clone = node.cloneNode(true);
-  cartPlace.appendChild(clone);
-  arrMenu.push(clone.textContent);
-  console.info(arrMenu);
+function addCart(numb) {
+  arrMenuName.push(menuName[numb].textContent);
+  arrQty.push(Number(qty[numb].value));
+
+  // list menu
+  const addList = document.createElement("li");
+  const textList = document.createTextNode(
+    `${menuName[numb].textContent} : ${Number(qty[numb].value)} , `
+  );
+  addList.appendChild(textList);
+  const locList = document.querySelector("#cart-place .row ul");
+  locList.appendChild(addList);
+  let node;
+  node = textList.cloneNode(true);
+  tampung.appendChild(node);
+  console.info(arrMenuName, arrQty);
 }
 
 allAddCart[0].addEventListener("click", () => {
-  duplicate(0);
+  addCart(0);
+  console.info(tampung);
 });
 
 allAddCart[1].addEventListener("click", () => {
-  duplicate(1);
+  addCart(1);
 });
+
+allAddCart[2].addEventListener("click", () => {
+  addCart(2);
+});
+
+allAddCart[3].addEventListener("click", () => {
+  addCart(3);
+});
+
+allAddCart[4].addEventListener("click", () => {
+  addCart(4);
+});
+
+allAddCart[5].addEventListener("click", () => {
+  addCart(5);
+});
+
+allAddCart[6].addEventListener("click", () => {
+  addCart(6);
+});
+
+allAddCart[7].addEventListener("click", () => {
+  addCart(7);
+});
+
+allAddCart[8].addEventListener("click", () => {
+  addCart(8);
+});
+
+allAddCart[9].addEventListener("click", () => {
+  addCart(9);
+});
+
+allAddCart[10].addEventListener("click", () => {
+  addCart(10);
+});
+
+allAddCart[11].addEventListener("click", () => {
+  addCart(11);
+});
+
+allAddCart[12].addEventListener("click", () => {
+  addCart(12);
+});
+
+allAddCart[13].addEventListener("click", () => {
+  addCart(13);
+});
+
+allAddCart[14].addEventListener("click", () => {
+  addCart(14);
+});
+
+allAddCart[15].addEventListener("click", () => {
+  addCart(15);
+});
+
+allAddCart[16].addEventListener("click", () => {
+  addCart(16);
+});
+
+allAddCart[17].addEventListener("click", () => {
+  addCart(17);
+});
+
+allAddCart[18].addEventListener("click", () => {
+  addCart(18);
+});
+
+allAddCart[19].addEventListener("click", () => {
+  addCart(19);
+});
+
+allAddCart[20].addEventListener("click", () => {
+  addCart(20);
+});
+
+allAddCart[21].addEventListener("click", () => {
+  addCart(21);
+});
+
+allAddCart[21].addEventListener("click", () => {
+  addCart(21);
+});
+
+allAddCart[22].addEventListener("click", () => {
+  addCart(22);
+});
+
+allAddCart[23].addEventListener("click", () => {
+  addCart(23);
+});
+
+allAddCart[24].addEventListener("click", () => {
+  addCart(24);
+});
+
+allAddCart[25].addEventListener("click", () => {
+  addCart(25);
+});
+
+allAddCart[26].addEventListener("click", () => {
+  addCart(26);
+});
+
+allAddCart[27].addEventListener("click", () => {
+  addCart(27);
+});
+
+allAddCart[28].addEventListener("click", () => {
+  addCart(28);
+});
+
+allAddCart[29].addEventListener("click", () => {
+  addCart(29);
+});
+
+allAddCart[30].addEventListener("click", () => {
+  addCart(30);
+});
+
+allAddCart[31].addEventListener("click", () => {
+  addCart(31);
+});
+
+allAddCart[32].addEventListener("click", () => {
+  addCart(32);
+});
+
+function msg() {
+  const url =
+    "https://api.whatsapp.com/send?phone=6281385532791&text=Order%20%3A%0A*" +
+    order.textContent +
+    "*%20%3A%20";
+
+  window.open(url);
+}
+
+document.getElementById("wa").addEventListener("click", () => msg());

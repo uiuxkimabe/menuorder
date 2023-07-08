@@ -53,7 +53,7 @@ h6 {
 /* nav */
 
 nav {
-  padding: 1em 0;
+  padding: 0.5em 0;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -162,7 +162,7 @@ nav a {
 #hero {
   padding: 2em 0;
   position: sticky;
-  top: 70px;
+  top: 55px;
   background-color: var(--basic);
 }
 
@@ -198,13 +198,14 @@ nav a {
 }
 
 #list .card {
+  padding: 0.4em;
   border-radius: 5px;
   border: 1px solid #c2c2c2;
 }
 
 #list .card .preview {
   display: block;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   border: 1px solid var(--dark);
   height: 150px;
   background-color: var(--dark);
@@ -223,7 +224,26 @@ nav a {
   /* border: 1px solid black; */
 }
 
-#list .card button {
+#list .card figcaption form {
+  text-align: center;
+}
+
+#list .card figcaption input[type="number"] {
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  padding: 5px;
+}
+
+#list .card figcaption input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#list .card .addCart {
+  width: 100%;
   padding: 10px 1.5em;
   background-color: var(--dark);
   color: var(--basic);
@@ -236,11 +256,22 @@ nav a {
 /* cart place */
 
 #cart-place {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  right: 0;
-  width: 300px;
+  right: 0; */
+  /* display: none; */
+  width: 100%;
   z-index: 9999;
   height: 100vh;
   background-color: #d6d6d6;
+}
+
+#cart-place .row {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+#cart-place .row ul li {
+  margin: 10px 0;
 }
