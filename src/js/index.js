@@ -138,9 +138,10 @@ filterNav[5].addEventListener("click", () => {
 });
 
 // open cart orderan
+const cartPlace = document.getElementById("cart-place");
 const orderan = document.getElementById("orderan");
 orderan.addEventListener("click", () => {
-  document.getElementById("cart-place").classList.toggle("up");
+  cartPlace.classList.toggle("up");
 });
 
 // cart
@@ -328,4 +329,5 @@ function msg() {
 
 document.getElementById("wa").addEventListener("click", () => {
   msg();
+  cartPlace.classList.remove("up");
 });
