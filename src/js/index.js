@@ -331,3 +331,17 @@ document.getElementById("wa").addEventListener("click", () => {
   msg();
   cartPlace.classList.remove("up");
 });
+
+// stopping reload when press enter
+function stopReload(e) {
+  switch (e.key) {
+    case "Enter":
+      e.preventDefault();
+      break;
+
+    default:
+      break;
+  }
+}
+
+document.addEventListener("keydown", stopReload);
