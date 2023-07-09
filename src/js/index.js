@@ -315,16 +315,28 @@ allAddCart[32].addEventListener("click", () => {
   addCart(32);
 });
 
+const customer = document.getElementById("customer");
+const area = document.getElementById("area");
+const remark = document.getElementById("remark");
+const wa = document.getElementById("wa");
+
 function msg() {
+
   const url =
-    "https://api.whatsapp.com/send?phone=6281385532791&text=Order%20%3A%0A*" +
+    "https://api.whatsapp.com/send?phone=6281385532791&text=Hi%2C%20Grand%20Ussu.%20Saya%20Mau%20Order%20Ya%20!!!%0ANama%20%3A%20*" +
+    customer.value +
+    "*%0AArea%20%3A%20*" +
+    area.value +
+    "*%0APesan%20Tambahan%20%3A%20*" +
+    remark.value +
+    "*%0ASaya%20Pesan%20%3A%20%0A*" +
     tampung.textContent +
-    "*%20%3A%20";
+    "*%0A%0A%0A*)%20Pembayaran%20dilakukan%20setelah%20pesanan%20dipastikan%20benar%2C%20melalui%0A-%20Bank%20Transfer%0A-%20BNI%20QRIS%0A-%20Debet%20%2F%20Credit%20Card%0A%0A";
 
   window.open(url);
 }
 
-document.getElementById("wa").addEventListener("click", () => {
+wa.addEventListener("click", () => {
   msg();
   cartPlace.classList.remove("up");
 });
