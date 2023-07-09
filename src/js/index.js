@@ -343,6 +343,11 @@ function msg() {
     "*%0ASaya%20Pesan%20%3A%20%0A*" +
     tampung.textContent +
     "*%0A%0A%0A*)%20Pembayaran%20dilakukan%20setelah%20pesanan%20dipastikan%20benar%2C%20melalui%0A-%20Bank%20Transfer%0A-%20BNI%20QRIS%0A-%20Debet%20%2F%20Credit%20Card%0A%0A";
+  tampung.textContent = "";
+  orderNotif.textContent = "";
+  locList.textContent = "";
+  orderNotif.style.background = "none";
+  cartPlace.classList.toggle("up");
 
   window.open(url);
 }

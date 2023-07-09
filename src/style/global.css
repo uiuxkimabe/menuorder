@@ -206,14 +206,20 @@ nav a {
 
 #list .card .preview {
   display: block;
+  overflow: hidden;
   border-radius: 5px;
-  border: 1px solid var(--dark);
+  /* border: 1px solid var(--dark); */
   height: 150px;
   background-color: var(--dark);
 }
 
+#list .card .preview img {
+  width: 100%;
+  object-fit: cover;
+}
+
 #list .card figcaption {
-  padding: 1em;
+  padding: 1em 10px;
   gap: 1em;
 }
 
@@ -239,14 +245,14 @@ nav a {
 #list .card .addCart {
   width: 100%;
   padding: 10px 1.5em;
-  background-color: var(--dark);
+  background-color: #13580a;
   color: var(--basic);
   border: none;
   border-radius: 5px;
 }
 
 #list .card .addCart:active {
-  background-color: #313131;
+  background-color: #228d13;
 }
 
 /* end menu */
