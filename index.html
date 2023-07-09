@@ -545,30 +545,12 @@
     <section id="cart-place">
       <div class="container">
         <div class="row">
-          <form class="d-grid">
-            <div class="col">
-              <label>Name / <i>Nama</i></label>
-              <input
-                type="text"
-                placeholder="Ex. John Doe"
-                id="customer"
-                required
-              />
-            </div>
-            <div class="col">
-              <label>Room or Area / <i>No. Kamar atau Area</i></label>
-              <input
-                type="text"
-                placeholder="Ex. 123 or Coco Granus"
-                id="area"
-                required
-              />
-            </div>
-            <div class="col">
-              <label>Remarks <i>Pesan Tambahan</i></label>
-              <input type="text" placeholder="Ex. Extra Sauce" id="remark" />
-            </div>
-          </form>
+          <figcaption id="inputCustomer">
+            <h2>Hi, <span id="customer">Kiki</span></h2>
+            <p>Saya Berada di Room / Area : <span id="area">173</span></p>
+            <label>Pesan Tambahan</label>
+            <input type="text" id="remark" />
+          </figcaption>
           <button type="submit" id="wa">Process</button>
           <button type="submit" id="reset">Reset</button>
           <ul></ul>

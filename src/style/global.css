@@ -161,7 +161,7 @@ nav a {
 /* hero */
 
 #hero {
-  padding: 2em 0;
+  padding: 1.2em 0;
   position: sticky;
   top: 55px;
   background-color: var(--basic);
@@ -218,7 +218,6 @@ nav a {
 }
 
 #list .card figcaption .title {
-  width: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -261,7 +260,7 @@ nav a {
   padding: 1em 0;
   width: 100%;
   z-index: 9999;
-  height: 90vh;
+  height: 85vh;
   background-color: #eeeeee;
   transition: 0.3s ease-in-out;
 }
@@ -270,14 +269,13 @@ nav a {
   bottom: 0;
 }
 
-#cart-place form {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 5px;
+#inputCustomer {
+  font-size: 0.9rem;
 }
 
-#cart-place form input {
+#remark {
   width: 100%;
-  margin: 1em 0;
+  /* margin: 1em 0; */
   padding: 10px;
   border: 1px solid #c2c2c2;
   border-radius: 5px;
@@ -285,6 +283,7 @@ nav a {
 }
 
 #cart-place .row ul {
+  margin: 1em 0;
   height: 260px;
   overflow-y: scroll;
   /* border: 1px solid black; */
@@ -309,7 +308,7 @@ nav a {
   border-radius: 5px;
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  bottom: 80px;
   transform: translateX(-50%);
 }
 
@@ -321,7 +320,7 @@ nav a {
   border-radius: 5px;
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 30px;
   transform: translateX(-50%);
 }
 
