@@ -258,10 +258,10 @@ nav a {
   position: fixed;
   bottom: -100%;
   right: 0;
-  padding: 2em 0;
+  padding: 1em 0;
   width: 100%;
   z-index: 9999;
-  height: 80vh;
+  height: 90vh;
   background-color: #eeeeee;
   transition: 0.3s ease-in-out;
 }
@@ -272,7 +272,7 @@ nav a {
 
 #cart-place form {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1em;
+  gap: 5px;
 }
 
 #cart-place form input {
@@ -285,7 +285,7 @@ nav a {
 }
 
 #cart-place .row ul {
-  height: 300px;
+  height: 260px;
   overflow-y: scroll;
   /* border: 1px solid black; */
 }
