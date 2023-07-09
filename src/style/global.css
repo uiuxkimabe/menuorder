@@ -246,6 +246,10 @@ nav a {
   border-radius: 5px;
 }
 
+#list .card .addCart:active {
+  background-color: #313131;
+}
+
 /* end menu */
 
 /* cart place */
@@ -254,11 +258,11 @@ nav a {
   position: fixed;
   bottom: -100%;
   right: 0;
-  /* display: none; */
+  padding: 2em 0;
   width: 100%;
   z-index: 9999;
-  height: 90vh;
-  background-color: #d6d6d6;
+  height: 80vh;
+  background-color: #eeeeee;
   transition: 0.3s ease-in-out;
 }
 
@@ -266,10 +270,47 @@ nav a {
   bottom: 0;
 }
 
+#cart-place .row ul {
+  height: 300px;
+  overflow-y: scroll;
+  /* border: 1px solid black; */
+}
+
 #cart-place .row ul li {
   margin: 10px 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #b4b4b4;
 }
 
 #cart-place .tampung {
   display: none;
+}
+
+#wa {
+  width: 80%;
+  padding: 10px 1.5em;
+  background-color: var(--dark);
+  color: var(--basic);
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+}
+
+#reset {
+  width: 80%;
+  padding: 10px 1.5em;
+  color: var(--dark);
+  border: 1px solid #1e1e1e;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
+
+#wa:active {
+  background: #313131;
 }

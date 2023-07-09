@@ -151,13 +151,11 @@ const qty = document.querySelectorAll(".qty");
 const arrMenuName = [];
 const arrQty = [];
 const tampung = document.querySelector(".tampung");
-let count = 0;
 let orderNotif = document.querySelector("#orderan .numb");
+const locList = document.querySelector("#cart-place .row ul");
 allAddCart.forEach((countOrder) => {
   countOrder.addEventListener("click", () => {
-    let result = count + 1;
-    count++;
-    orderNotif.innerHTML = result;
+    orderNotif.innerHTML = arrMenuName.length + 1;
     orderNotif.style.background = "red";
     orderNotif.style.color = "#fff";
   });
@@ -173,17 +171,16 @@ function addCart(numb) {
     `${menuName[numb].textContent} : ${Number(qty[numb].value)} , `
   );
   addList.appendChild(textList);
-  const locList = document.querySelector("#cart-place .row ul");
   locList.appendChild(addList);
   let node;
   node = textList.cloneNode(true);
   tampung.appendChild(node);
-  console.info(arrMenuName, arrQty);
+  console.info(tampung);
 }
 
 allAddCart[0].addEventListener("click", () => {
   addCart(0);
-  console.info(tampung);
+  // console.info(tampung);
 });
 
 allAddCart[1].addEventListener("click", () => {
@@ -330,6 +327,19 @@ function msg() {
 document.getElementById("wa").addEventListener("click", () => {
   msg();
   cartPlace.classList.remove("up");
+});
+
+document.getElementById("reset").addEventListener("click", (e) => {
+  arrMenuName.splice(0, arrMenuName.length);
+  arrQty.splice(0, arrQty.length);
+  tampung.textContent = "";
+  orderNotif.textContent = "";
+  locList.textContent = "";
+  qty.forEach((element) => {
+    element.value = 1;
+  });
+  orderNotif.style.background = "none";
+  cartPlace.classList.toggle("up");
 });
 
 // stopping reload when press enter
