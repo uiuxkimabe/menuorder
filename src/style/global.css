@@ -260,7 +260,7 @@ nav a {
   background-color: lightgreen;
   color: darkgreen;
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 50%;
   width: 90%;
   transform: translateX(-50%);
