@@ -549,6 +549,12 @@
               <button type="button" class="addCart">Add to Cart</button>
             </li>
           </ul>
+          <div class="notifAddCart">
+            <figcaption class="d-flex">
+              <p>Items Telah di Tambahkan ke Keranjang</p>
+              <button type="button" onclick="viewOrder()">Lihat</button>
+            </figcaption>
+          </div>
         </div>
       </div>
     </section>
@@ -558,6 +564,9 @@
     <section id="cart-place">
       <div class="container">
         <div class="row">
+          <button type="button" onclick="closeCartDetail()" class="back-arrow">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
           <figcaption id="inputCustomer">
             <h2>Hi, <span id="customer">Guest</span></h2>
             <p>Room / Area : <span id="area">-</span></p>

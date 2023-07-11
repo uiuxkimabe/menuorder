@@ -137,14 +137,27 @@ filterNav[5].addEventListener("click", () => {
   console.info("bev");
 });
 
-// open cart orderan
+// open notif cart orderan
 const cartPlace = document.getElementById("cart-place");
 const orderan = document.getElementById("orderan");
-orderan.addEventListener("click", () => {
+
+function notifAddToCart() {
   cartPlace.classList.toggle("up");
+}
+
+function viewOrder() {
+  notifAddToCart();
+}
+
+function closeCartDetail() {
+  notifAddToCart();
+}
+
+orderan.addEventListener("click", () => {
+  notifAddToCart();
 });
 
-// cart
+// check item on cart
 const allAddCart = document.querySelectorAll(".card .addCart");
 const menuName = document.querySelectorAll(".title p");
 const qty = document.querySelectorAll(".qty");
@@ -153,11 +166,16 @@ const arrQty = [];
 const tampung = document.querySelector(".tampung");
 let orderNotif = document.querySelector("#orderan .numb");
 const locList = document.querySelector("#cart-place .row ul");
+const notifAdd = document.querySelector(".notifAddCart");
 allAddCart.forEach((countOrder) => {
   countOrder.addEventListener("click", () => {
     orderNotif.innerHTML = arrMenuName.length + 1;
     orderNotif.style.background = "red";
     orderNotif.style.color = "#fff";
+    notifAdd.classList.add("modal");
+    setTimeout(() => {
+      notifAdd.classList.remove("modal");
+    }, 2000);
   });
 });
 
