@@ -671,21 +671,22 @@ allAddCart[82].addEventListener("click", () => {
 });
 
 // customer data
-// const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
-// const popArea = prompt(
-//   "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
-// );
 
-const customer = document.getElementById("customer");
-const area = document.getElementById("area");
+function nextStep() {
+  const rulesModal = document.getElementById("rules");
+  rulesModal.style.display = "none";
+  setTimeout(() => {
+    const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
+    const popArea = prompt(
+      "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
+    );
+    document.getElementById("customer").innerHTML = popName;
+    document.getElementById("area").innerHTML = popArea;
+  }, 1000);
+}
+
 const remark = document.getElementById("remark");
 const wa = document.getElementById("wa");
-
-customer.innerHTML = popName;
-area.innerHTML = popArea;
-
-console.info(popName);
-console.info(popArea);
 
 function msg() {
   const url =
