@@ -1,9 +1,9 @@
 // hamBtn
 
-const navigasi = document.querySelector(".navigasi");
-document.querySelector(".hamBtn").addEventListener("click", () => {
-  navigasi.classList.toggle("popup");
-});
+// const navigasi = document.querySelector(".navigasi");
+// document.querySelector(".hamBtn").addEventListener("click", () => {
+//   navigasi.classList.toggle("popup");
+// });
 
 // search
 const inputField = document.getElementById("inputField");
@@ -19,32 +19,63 @@ inputField.addEventListener("input", () => {
 });
 
 // filter
-const filterNav = document.querySelectorAll(".navigasi ul li");
+const filterNav = document.querySelectorAll("#hero ul li");
 const all = document.querySelectorAll(".card");
 const snack = document.querySelectorAll(".snack");
 const pasta = document.querySelectorAll(".pasta");
 const indo = document.querySelectorAll(".indo");
 const chin = document.querySelectorAll(".chinese");
 const bev = document.querySelectorAll(".bev");
+const arabic = document.querySelectorAll(".arabic");
 
-filterNav.forEach((element) => {
-  element.addEventListener("click", () => {
-    const hamBtnInput = document.querySelector(".hamBtn input");
-    navigasi.classList.toggle("popup");
-    hamBtnInput.checked = false;
-  });
-});
+console.info(filterNav);
+
+// filterNav.forEach((element) => {
+//   element.addEventListener("click", () => {
+//     const hamBtnInput = document.querySelector(".hamBtn input");
+//     navigasi.classList.toggle("popup");
+//     hamBtnInput.checked = false;
+//   });
+// });
 
 filterNav[0].addEventListener("click", () => {
   all.forEach((element) => {
     element.style.display = "block";
+    filterNav[0].style.background = "lightgreen";
+    filterNav[0].style.color = "darkgreen";
+    filterNav[1].style.background = "none";
+    filterNav[1].style.color = "#000";
+    filterNav[2].style.background = "none";
+    filterNav[2].style.color = "#000";
+    filterNav[3].style.background = "none";
+    filterNav[3].style.color = "#000";
+    filterNav[4].style.background = "none";
+    filterNav[4].style.color = "#000";
+    filterNav[5].style.background = "none";
+    filterNav[5].style.color = "#000";
+    filterNav[6].style.background = "none";
+    filterNav[6].style.color = "#000";
   });
-  console.info("oke");
+  console.info("all");
 });
 
 filterNav[1].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "block";
+    filterNav[0].style.background = "none";
+    filterNav[0].style.color = "#000";
+    filterNav[1].style.background = "lightgreen";
+    filterNav[1].style.color = "darkgreen";
+    filterNav[2].style.background = "none";
+    filterNav[2].style.color = "#000";
+    filterNav[3].style.background = "none";
+    filterNav[3].style.color = "#000";
+    filterNav[4].style.background = "none";
+    filterNav[4].style.color = "#000";
+    filterNav[5].style.background = "none";
+    filterNav[5].style.color = "#000";
+    filterNav[6].style.background = "none";
+    filterNav[6].style.color = "#000";
   });
   pasta.forEach((element) => {
     element.style.display = "none";
@@ -56,6 +87,9 @@ filterNav[1].addEventListener("click", () => {
     element.style.display = "none";
   });
   bev.forEach((element) => {
+    element.style.display = "none";
+  });
+  arabic.forEach((element) => {
     element.style.display = "none";
   });
   console.info("snack");
@@ -67,6 +101,20 @@ filterNav[2].addEventListener("click", () => {
   });
   pasta.forEach((element) => {
     element.style.display = "block";
+    filterNav[0].style.background = "none";
+    filterNav[0].style.color = "#000";
+    filterNav[1].style.background = "none";
+    filterNav[1].style.color = "#000";
+    filterNav[2].style.background = "lightgreen";
+    filterNav[2].style.color = "darkgreen";
+    filterNav[3].style.background = "none";
+    filterNav[3].style.color = "#000";
+    filterNav[4].style.background = "none";
+    filterNav[4].style.color = "#000";
+    filterNav[5].style.background = "none";
+    filterNav[5].style.color = "#000";
+    filterNav[6].style.background = "none";
+    filterNav[6].style.color = "#000";
   });
   indo.forEach((element) => {
     element.style.display = "none";
@@ -75,6 +123,9 @@ filterNav[2].addEventListener("click", () => {
     element.style.display = "none";
   });
   bev.forEach((element) => {
+    element.style.display = "none";
+  });
+  arabic.forEach((element) => {
     element.style.display = "none";
   });
   console.info("pasta");
@@ -89,11 +140,28 @@ filterNav[3].addEventListener("click", () => {
   });
   indo.forEach((element) => {
     element.style.display = "block";
+    filterNav[0].style.background = "none";
+    filterNav[0].style.color = "#000";
+    filterNav[1].style.background = "none";
+    filterNav[1].style.color = "#000";
+    filterNav[2].style.background = "none";
+    filterNav[2].style.color = "#000";
+    filterNav[3].style.background = "lightgreen";
+    filterNav[3].style.color = "darkgreen";
+    filterNav[4].style.background = "none";
+    filterNav[4].style.color = "#000";
+    filterNav[5].style.background = "none";
+    filterNav[5].style.color = "#000";
+    filterNav[6].style.background = "none";
+    filterNav[6].style.color = "#000";
   });
   chin.forEach((element) => {
     element.style.display = "none";
   });
   bev.forEach((element) => {
+    element.style.display = "none";
+  });
+  arabic.forEach((element) => {
     element.style.display = "none";
   });
   console.info("indo");
@@ -111,8 +179,25 @@ filterNav[4].addEventListener("click", () => {
   });
   chin.forEach((element) => {
     element.style.display = "block";
+    filterNav[0].style.background = "none";
+    filterNav[0].style.color = "#000";
+    filterNav[1].style.background = "none";
+    filterNav[1].style.color = "#000";
+    filterNav[2].style.background = "none";
+    filterNav[2].style.color = "#000";
+    filterNav[3].style.background = "none";
+    filterNav[3].style.color = "#000";
+    filterNav[4].style.background = "lightgreen";
+    filterNav[4].style.color = "darkgreen";
+    filterNav[5].style.background = "none";
+    filterNav[5].style.color = "#000";
+    filterNav[6].style.background = "none";
+    filterNav[6].style.color = "#000";
   });
   bev.forEach((element) => {
+    element.style.display = "none";
+  });
+  arabic.forEach((element) => {
     element.style.display = "none";
   });
   console.info("chin");
@@ -133,9 +218,64 @@ filterNav[5].addEventListener("click", () => {
   });
   bev.forEach((element) => {
     element.style.display = "block";
+    filterNav[0].style.background = "none";
+    filterNav[0].style.color = "#000";
+    filterNav[1].style.background = "none";
+    filterNav[1].style.color = "#000";
+    filterNav[2].style.background = "none";
+    filterNav[2].style.color = "#000";
+    filterNav[3].style.background = "none";
+    filterNav[3].style.color = "#000";
+    filterNav[4].style.background = "none";
+    filterNav[4].style.color = "#000";
+    filterNav[5].style.background = "lightgreen";
+    filterNav[5].style.color = "darkgreen";
+    filterNav[6].style.background = "none";
+    filterNav[6].style.color = "#000";
+  });
+  arabic.forEach((element) => {
+    element.style.display = "none";
   });
   console.info("bev");
 });
+
+filterNav[6].addEventListener("click", () => {
+  snack.forEach((element) => {
+    element.style.display = "none";
+  });
+  pasta.forEach((element) => {
+    element.style.display = "none";
+  });
+  indo.forEach((element) => {
+    element.style.display = "none";
+  });
+  chin.forEach((element) => {
+    element.style.display = "none";
+  });
+  bev.forEach((element) => {
+    element.style.display = "none";
+  });
+  arabic.forEach((element) => {
+    element.style.display = "block";
+    filterNav[0].style.background = "none";
+    filterNav[0].style.color = "#000";
+    filterNav[1].style.background = "none";
+    filterNav[1].style.color = "#000";
+    filterNav[2].style.background = "none";
+    filterNav[2].style.color = "#000";
+    filterNav[3].style.background = "none";
+    filterNav[3].style.color = "#000";
+    filterNav[4].style.background = "none";
+    filterNav[4].style.color = "#000";
+    filterNav[5].style.background = "none";
+    filterNav[5].style.color = "#000";
+    filterNav[6].style.background = "lightgreen";
+    filterNav[6].style.color = "darkgreen";
+  });
+  console.info("arabic");
+});
+
+console.info(list.length);
 
 // open notif cart orderan
 const cartPlace = document.getElementById("cart-place");
@@ -155,6 +295,7 @@ function closeCartDetail() {
 
 orderan.addEventListener("click", () => {
   notifAddToCart();
+  console.info("oke");
 });
 
 // check item on cart
@@ -333,11 +474,211 @@ allAddCart[32].addEventListener("click", () => {
   addCart(32);
 });
 
+allAddCart[33].addEventListener("click", () => {
+  addCart(33);
+});
+
+allAddCart[34].addEventListener("click", () => {
+  addCart(34);
+});
+
+allAddCart[35].addEventListener("click", () => {
+  addCart(35);
+});
+
+allAddCart[36].addEventListener("click", () => {
+  addCart(36);
+});
+
+allAddCart[37].addEventListener("click", () => {
+  addCart(37);
+});
+
+allAddCart[38].addEventListener("click", () => {
+  addCart(38);
+});
+
+allAddCart[39].addEventListener("click", () => {
+  addCart(39);
+});
+
+allAddCart[40].addEventListener("click", () => {
+  addCart(40);
+});
+
+allAddCart[41].addEventListener("click", () => {
+  addCart(41);
+});
+
+allAddCart[42].addEventListener("click", () => {
+  addCart(42);
+});
+
+allAddCart[43].addEventListener("click", () => {
+  addCart(43);
+});
+
+allAddCart[44].addEventListener("click", () => {
+  addCart(44);
+});
+
+allAddCart[45].addEventListener("click", () => {
+  addCart(45);
+});
+
+allAddCart[46].addEventListener("click", () => {
+  addCart(46);
+});
+
+allAddCart[47].addEventListener("click", () => {
+  addCart(47);
+});
+
+allAddCart[48].addEventListener("click", () => {
+  addCart(48);
+});
+
+allAddCart[49].addEventListener("click", () => {
+  addCart(49);
+});
+
+allAddCart[50].addEventListener("click", () => {
+  addCart(50);
+});
+
+allAddCart[51].addEventListener("click", () => {
+  addCart(51);
+});
+
+allAddCart[52].addEventListener("click", () => {
+  addCart(52);
+});
+
+allAddCart[53].addEventListener("click", () => {
+  addCart(53);
+});
+
+allAddCart[54].addEventListener("click", () => {
+  addCart(54);
+});
+
+allAddCart[55].addEventListener("click", () => {
+  addCart(55);
+});
+
+allAddCart[56].addEventListener("click", () => {
+  addCart(56);
+});
+
+allAddCart[57].addEventListener("click", () => {
+  addCart(57);
+});
+
+allAddCart[58].addEventListener("click", () => {
+  addCart(58);
+});
+
+allAddCart[59].addEventListener("click", () => {
+  addCart(59);
+});
+
+allAddCart[60].addEventListener("click", () => {
+  addCart(60);
+});
+
+allAddCart[61].addEventListener("click", () => {
+  addCart(61);
+});
+
+allAddCart[62].addEventListener("click", () => {
+  addCart(62);
+});
+
+allAddCart[63].addEventListener("click", () => {
+  addCart(63);
+});
+
+allAddCart[64].addEventListener("click", () => {
+  addCart(64);
+});
+
+allAddCart[65].addEventListener("click", () => {
+  addCart(65);
+});
+
+allAddCart[66].addEventListener("click", () => {
+  addCart(66);
+});
+
+allAddCart[67].addEventListener("click", () => {
+  addCart(67);
+});
+
+allAddCart[68].addEventListener("click", () => {
+  addCart(68);
+});
+
+allAddCart[69].addEventListener("click", () => {
+  addCart(69);
+});
+
+allAddCart[70].addEventListener("click", () => {
+  addCart(70);
+});
+
+allAddCart[71].addEventListener("click", () => {
+  addCart(71);
+});
+
+allAddCart[72].addEventListener("click", () => {
+  addCart(72);
+});
+
+allAddCart[73].addEventListener("click", () => {
+  addCart(73);
+});
+
+allAddCart[74].addEventListener("click", () => {
+  addCart(74);
+});
+
+allAddCart[75].addEventListener("click", () => {
+  addCart(75);
+});
+
+allAddCart[76].addEventListener("click", () => {
+  addCart(76);
+});
+
+allAddCart[77].addEventListener("click", () => {
+  addCart(77);
+});
+
+allAddCart[78].addEventListener("click", () => {
+  addCart(78);
+});
+
+allAddCart[79].addEventListener("click", () => {
+  addCart(79);
+});
+
+allAddCart[80].addEventListener("click", () => {
+  addCart(80);
+});
+
+allAddCart[81].addEventListener("click", () => {
+  addCart(81);
+});
+
+allAddCart[82].addEventListener("click", () => {
+  addCart(82);
+});
+
 // customer data
-const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
-const popArea = prompt(
-  "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
-);
+// const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
+// const popArea = prompt(
+//   "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
+// );
 
 const customer = document.getElementById("customer");
 const area = document.getElementById("area");
