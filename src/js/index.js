@@ -25,19 +25,14 @@ const snack = document.querySelectorAll(".snack");
 const pasta = document.querySelectorAll(".pasta");
 const indo = document.querySelectorAll(".indo");
 const chin = document.querySelectorAll(".chinese");
-const bev = document.querySelectorAll(".bev");
+const bev = document.querySelectorAll(".beverage");
 const arabic = document.querySelectorAll(".arabic");
 
-console.info(filterNav);
+console.info(filterNav, arabic.length);
 
-// filterNav.forEach((element) => {
-//   element.addEventListener("click", () => {
-//     const hamBtnInput = document.querySelector(".hamBtn input");
-//     navigasi.classList.toggle("popup");
-//     hamBtnInput.checked = false;
-//   });
-// });
-
+// all
+filterNav[0].style.background = "lightgreen";
+filterNav[0].style.color = "darkgreen";
 filterNav[0].addEventListener("click", () => {
   all.forEach((element) => {
     element.style.display = "block";
@@ -59,6 +54,7 @@ filterNav[0].addEventListener("click", () => {
   console.info("all");
 });
 
+// snack
 filterNav[1].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "block";
@@ -94,7 +90,7 @@ filterNav[1].addEventListener("click", () => {
   });
   console.info("snack");
 });
-
+// pasta
 filterNav[2].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "none";
@@ -130,7 +126,7 @@ filterNav[2].addEventListener("click", () => {
   });
   console.info("pasta");
 });
-
+// indo
 filterNav[3].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "none";
@@ -166,7 +162,7 @@ filterNav[3].addEventListener("click", () => {
   });
   console.info("indo");
 });
-
+// chin
 filterNav[4].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "none";
@@ -202,7 +198,7 @@ filterNav[4].addEventListener("click", () => {
   });
   console.info("chin");
 });
-
+// bev
 filterNav[5].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "none";
@@ -236,9 +232,9 @@ filterNav[5].addEventListener("click", () => {
   arabic.forEach((element) => {
     element.style.display = "none";
   });
-  console.info("bev");
+  console.info("chin");
 });
-
+// arabic
 filterNav[6].addEventListener("click", () => {
   snack.forEach((element) => {
     element.style.display = "none";
