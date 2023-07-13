@@ -1,10 +1,3 @@
-// hamBtn
-
-// const navigasi = document.querySelector(".navigasi");
-// document.querySelector(".hamBtn").addEventListener("click", () => {
-//   navigasi.classList.toggle("popup");
-// });
-
 // search
 const inputField = document.getElementById("inputField");
 const list = document.querySelectorAll("#list .card");
@@ -675,14 +668,14 @@ allAddCart[82].addEventListener("click", () => {
 function nextStep() {
   const rulesModal = document.getElementById("rules");
   rulesModal.style.display = "none";
-  setTimeout(() => {
-    const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
-    const popArea = prompt(
-      "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
-    );
-    document.getElementById("customer").innerHTML = popName;
-    document.getElementById("area").innerHTML = popArea;
-  }, 1000);
+  // setTimeout(() => {
+  //     const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
+  //     const popArea = prompt(
+  //         "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
+  //     );
+  //     document.getElementById("customer").innerHTML = popName;
+  //     document.getElementById("area").innerHTML = popArea;
+  // }, 300);
 }
 
 const remark = document.getElementById("remark");
