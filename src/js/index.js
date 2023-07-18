@@ -668,14 +668,14 @@ allAddCart[82].addEventListener("click", () => {
 function nextStep() {
   const rulesModal = document.getElementById("rules");
   rulesModal.style.display = "none";
-  // setTimeout(() => {
-  //     const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
-  //     const popArea = prompt(
-  //         "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
-  //     );
-  //     document.getElementById("customer").innerHTML = popName;
-  //     document.getElementById("area").innerHTML = popArea;
-  // }, 300);
+  setTimeout(() => {
+    const popName = prompt("Input Your Name \n(Masukkan Nama Kamu)");
+    const popArea = prompt(
+      "Input Your Room or Area \n(Masukkan No. Kamar atau Nama Area)"
+    );
+    document.getElementById("customer").innerHTML = popName;
+    document.getElementById("area").innerHTML = popArea;
+  }, 300);
 }
 
 const remark = document.getElementById("remark");
@@ -683,7 +683,7 @@ const wa = document.getElementById("wa");
 
 function msg() {
   const url =
-    "https://api.whatsapp.com/send?phone=6281385532791&text=Hi%2C%20Grand%20Ussu.%20Saya%20Mau%20Order%20Ya%20!!!%0ANama%20%3A%20*" +
+    "https://api.whatsapp.com/send?phone=6281936629740&text=Hi%2C%20Grand%20Ussu.%20Saya%20Mau%20Order%20Ya%20!!!%0ANama%20%3A%20*" +
     customer.textContent +
     "*%0AArea%20%3A%20*" +
     area.textContent +
