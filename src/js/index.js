@@ -659,10 +659,6 @@ allAddCart[81].addEventListener("click", () => {
   addCart(81);
 });
 
-allAddCart[82].addEventListener("click", () => {
-  addCart(82);
-});
-
 // customer data
 
 function nextStep() {
