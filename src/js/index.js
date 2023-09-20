@@ -19,9 +19,9 @@ const pasta = document.querySelectorAll(".pasta");
 const indo = document.querySelectorAll(".indo");
 const chin = document.querySelectorAll(".chinese");
 const bev = document.querySelectorAll(".beverage");
-const arabic = document.querySelectorAll(".arabic");
+// const arabic = document.querySelectorAll(".arabic");
 
-console.info(filterNav, arabic.length);
+console.info(filterNav, list);
 
 // all
 filterNav[0].style.background = "lightgreen";
@@ -563,101 +563,101 @@ allAddCart[57].addEventListener("click", () => {
   addCart(57);
 });
 
-allAddCart[58].addEventListener("click", () => {
-  addCart(58);
-});
+// allAddCart[58].addEventListener("click", () => {
+//   addCart(58);
+// });
 
-allAddCart[59].addEventListener("click", () => {
-  addCart(59);
-});
+// allAddCart[59].addEventListener("click", () => {
+//   addCart(59);
+// });
 
-allAddCart[60].addEventListener("click", () => {
-  addCart(60);
-});
+// allAddCart[60].addEventListener("click", () => {
+//   addCart(60);
+// });
 
-allAddCart[61].addEventListener("click", () => {
-  addCart(61);
-});
+// allAddCart[61].addEventListener("click", () => {
+//   addCart(61);
+// });
 
-allAddCart[62].addEventListener("click", () => {
-  addCart(62);
-});
+// allAddCart[62].addEventListener("click", () => {
+//   addCart(62);
+// });
 
-allAddCart[63].addEventListener("click", () => {
-  addCart(63);
-});
+// allAddCart[63].addEventListener("click", () => {
+//   addCart(63);
+// });
 
-allAddCart[64].addEventListener("click", () => {
-  addCart(64);
-});
+// allAddCart[64].addEventListener("click", () => {
+//   addCart(64);
+// });
 
-allAddCart[65].addEventListener("click", () => {
-  addCart(65);
-});
+// allAddCart[65].addEventListener("click", () => {
+//   addCart(65);
+// });
 
-allAddCart[66].addEventListener("click", () => {
-  addCart(66);
-});
+// allAddCart[66].addEventListener("click", () => {
+//   addCart(66);
+// });
 
-allAddCart[67].addEventListener("click", () => {
-  addCart(67);
-});
+// allAddCart[67].addEventListener("click", () => {
+//   addCart(67);
+// });
 
-allAddCart[68].addEventListener("click", () => {
-  addCart(68);
-});
+// allAddCart[68].addEventListener("click", () => {
+//   addCart(68);
+// });
 
-allAddCart[69].addEventListener("click", () => {
-  addCart(69);
-});
+// allAddCart[69].addEventListener("click", () => {
+//   addCart(69);
+// });
 
-allAddCart[70].addEventListener("click", () => {
-  addCart(70);
-});
+// allAddCart[70].addEventListener("click", () => {
+//   addCart(70);
+// });
 
-allAddCart[71].addEventListener("click", () => {
-  addCart(71);
-});
+// allAddCart[71].addEventListener("click", () => {
+//   addCart(71);
+// });
 
-allAddCart[72].addEventListener("click", () => {
-  addCart(72);
-});
+// allAddCart[72].addEventListener("click", () => {
+//   addCart(72);
+// });
 
-allAddCart[73].addEventListener("click", () => {
-  addCart(73);
-});
+// allAddCart[73].addEventListener("click", () => {
+//   addCart(73);
+// });
 
-allAddCart[74].addEventListener("click", () => {
-  addCart(74);
-});
+// allAddCart[74].addEventListener("click", () => {
+//   addCart(74);
+// });
 
-allAddCart[75].addEventListener("click", () => {
-  addCart(75);
-});
+// allAddCart[75].addEventListener("click", () => {
+//   addCart(75);
+// });
 
-allAddCart[76].addEventListener("click", () => {
-  addCart(76);
-});
+// allAddCart[76].addEventListener("click", () => {
+//   addCart(76);
+// });
 
-allAddCart[77].addEventListener("click", () => {
-  addCart(77);
-});
+// allAddCart[77].addEventListener("click", () => {
+//   addCart(77);
+// });
 
-allAddCart[78].addEventListener("click", () => {
-  addCart(78);
-});
+// allAddCart[78].addEventListener("click", () => {
+//   addCart(78);
+// });
 
-allAddCart[79].addEventListener("click", () => {
-  addCart(79);
-});
+// allAddCart[79].addEventListener("click", () => {
+//   addCart(79);
+// });
 
-allAddCart[80].addEventListener("click", () => {
-  addCart(80);
-});
+// allAddCart[80].addEventListener("click", () => {
+//   addCart(80);
+// });
 
-allAddCart[81].addEventListener("click", () => {
-  addCart(81);
-});
+// allAddCart[81].addEventListener("click", () => {
+//   addCart(81);
+// });
 
 // customer data
 
