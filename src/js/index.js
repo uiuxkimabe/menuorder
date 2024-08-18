@@ -679,7 +679,7 @@ const wa = document.getElementById("wa");
 
 function msg() {
   const url =
-    "https://api.whatsapp.com/send?phone=6281936629740&text=Hi%2C%20Grand%20Ussu.%20Saya%20Mau%20Order%20Ya%20!!!%0ANama%20%3A%20*" +
+    "https://api.whatsapp.com/send?phone=6283153143923&text=Hi%2C%20Grand%20Ussu.%20Saya%20Mau%20Order%20Ya%20!!!%0ANama%20%3A%20*" +
     customer.textContent +
     "*%0AArea%20%3A%20*" +
     area.textContent +
